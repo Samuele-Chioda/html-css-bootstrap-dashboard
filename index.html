@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html-css-bootstrap-dashboard</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" >
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" > -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -42,36 +42,73 @@
     <main>
         <div class="conteiner d-flex">
             <div class="sidebar d-flex">
-                <div class="navbar start">
-                    <ul>
-                        <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
-                        <li><i class="fa-solid fa-chart-simple"></i><a href="#">Stats</a></li>
-                        <li><i class="fa-solid fa-signal"></i><a href="#">Signal</a></li>
+                <div class="navbar start d-flex justify-content-center">
+                    <ul class="no-padding-left">
+                        <li><i class="fa-solid fa-house mb-3 fs-3"></i><a class="d-none d-md-inline" href="#">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-chart-simple mb-3 fs-3"></i><a class="d-none d-md-inline"
+                                href="#">Stats</a></li>
+                        <li><i class="fa-solid fa-signal mb-3  fs-3"></i><a class="d-none d-md-inline"
+                                href="#">Signal</a></li>
                     </ul>
                 </div>
-                <div class="navbar end">
-                    <ul>
-                        <li><i class="fa-solid fa-circle-down"></i><a href="#">Home</a></li>
+                <div class="navbar end d-flex justify-content-center">
+                    <ul class="no-padding-left">
+                        <li><i class="fa-solid fa-circle-down mb-3 fs-3"></i><a class="d-none d-sm-inline"
+                                href="#">Home</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="main text-white" id="block-student">
-                <div class="sec student">
-                    <p>
-                        Nuovo Studente<i class="fa-solid fa-square-plus"></i>
-                    </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <div id="height" class="cl-12-sm w-100">
+                            <div class="main p-2 cl-12-sm" id="block-student">
+                                <div class="sec student">
+                                    <p id="plus">
+                                        Nuovo Studente<i class="fa-solid fa-square-plus fs-1 p-3"></i>
+                                    </p>
+                                </div>
+                                <div class="sec piano">
+                                    <p>
+                                        Boolean <i>Piano Blaze</i>
+                                    </p>
+                                    <p><i>3 app</i><i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-plus"></i></p>
+                                </div>
+                                <div class="sec online">
+                                    <p>Studenti online negli ultimi 30 minuti </p>
+                                    <p>125</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="cl-12-sm cl-9-md">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Prossime classi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Data Inizio</th>
+                                            <th>ROI</th>
+                                            <th>Stato</th>
+                                            <th>Azioni</th>
+                                        </tr>
+                                        <tr>
+                                            <td><img class="img-fluid" id="avatar-class" src="./img/class-avatar.jpg" alt="stats">Classe 75</td>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td><button class="green">Done</button></td>
+                                            <td><i class="fa-solid fa-pen my_border"></i><i class="fa-solid fa-basket-shopping my_border"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="sec piano">
-                    <p>
-                        Boolean <i>Piano Blaze</i>
-                    </p>
-                    <p><i>3 app</i><i class="fa-solid fa-angles-right"></i><i class="fa-solid fa-plus"></i></p>
-                </div>
-                <div class="sec online">
-                    <p>Studenti online negli ultimi 30 minuti </p>
-                    <p>125</p>
-                </div>
-            </div>
         </div>
     </main>
 

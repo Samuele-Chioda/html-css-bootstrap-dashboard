@@ -1,5 +1,9 @@
+/* body{
+    font-family: 'Roboto', sans-serif;
+} */
+
 .sidebar{
-    width: 100px;
+    width: 150px;
     height: 100vh;
     justify-content: space-between;
     align-content: center;
@@ -15,7 +19,8 @@ ul{
     background-color: white;
 }
 
-.block-student{
+#block-student{
     background-color:#1b72e8;
     width: 100%;
+    color: white;
 }

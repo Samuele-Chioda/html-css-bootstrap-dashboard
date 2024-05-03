@@ -10,12 +10,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -24,9 +18,10 @@
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-light my_bg-white p-4">
-                        <div class="card" style="width: 3rem;">
-                            <img src="./img/mobile-logo.png" alt="logo" class="img-fluid">
+                    <nav class="navbar navbar-light my_bg-white p-1">
+                        <div class="img-conteiner" style="">
+                            <img src="./img/mobile-logo.png" alt="logo small" class="img-fluid small-logo">
+                            <img src="./img/logo.svg"alt="logo big" class="img-fluid big-logo">
                         </div>
                         <form class="form-inline">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,34 +38,35 @@
             <div class="sidebar d-flex">
                 <div class="navbar start d-flex justify-content-center">
                     <ul class="no-padding-left">
-                        <li><i class="fa-solid fa-house mb-3 fs-3"></i><a class="d-none d-md-inline text-decoration-none" href="#">Home</a>
+                        <li><i class="fa-solid fa-house mb-3 fs-3"></i><a
+                                class="d-none d-md-inline text-decoration-none" href="#">Home</a>
                         </li>
-                        <li><i class="fa-solid fa-chart-simple mb-3 fs-3"></i><a class="d-none d-md-inline text-decoration-none"
-                                href="#">Stats</a></li>
-                        <li><i class="fa-solid fa-signal mb-3  fs-3"></i><a class="d-none d-md-inline text-decoration-none"
-                                href="#">Signal</a></li>
+                        <li><i class="fa-solid fa-chart-simple mb-3 fs-3"></i><a
+                                class="d-none d-md-inline text-decoration-none" href="#">Stats</a></li>
+                        <li><i class="fa-solid fa-signal mb-3  fs-3"></i><a
+                                class="d-none d-md-inline text-decoration-none" href="#">Signal</a></li>
                     </ul>
                 </div>
                 <div class="navbar end d-flex justify-content-center">
                     <ul class="no-padding-left">
-                        <li><i class="fa-solid fa-circle-down mb-3 fs-3"></i><a class="d-none d-md-inline text-decoration-none"
-                                href="#">Admin</a></li>
+                        <li><i class="fa-solid fa-circle-down mb-3 fs-3"></i><a
+                                class="d-none d-md-inline text-decoration-none" href="#">Admin</a></li>
                     </ul>
                 </div>
             </div>
             <div class="container m-0 p-0">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col">
                         <div id="height" class="w-100">
-                            <div class="main p-2 cl-12-sm" id="block-student">
+                            <div class="main p-2" id="block-student">
                                 <div class="sec student">
-                                    <p id="plus">
-                                        Nuovo Studente<i class="fa-solid fa-plus fs-6 p-3"></i>
+                                    <p id="plus" class="">
+                                        Nuovo Studente<i class="my_plus-border fa-solid fa-plus fs-6 p-3 m-2"></i>
                                     </p>
                                 </div>
                                 <div class="sec piano">
                                     <p class=""><span class="fw-bold fs-2">Boolean</span>
-                                        <a class="my_round">Piano Blaze</a>
+                                        <i class="my_round">Piano Blaze</i>
                                     </p>
                                     <p><i class="my_round">3 app</i><i class="fa-solid fa-angles-right "></i><i
                                             class="fa-solid fa-plus my_round"></i></p>
@@ -81,14 +77,16 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-12">
                         <div class="cl-12-sm p-3">
-                            <table class="table border">
-                                <thead>
+                            <table class="table border rounded">
+                                <thead class="rounded-top">
                                     <tr>
                                         <th class="fs-4" scope="col">Prossime classi</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="rounded-bottom">
                                     <tr>
                                         <th>Nome</th>
                                         <th class="my_d-none">Data Inizio</th>
@@ -172,11 +170,44 @@
                             </table>
                         </div>
                     </div>
+                    <div class="col-12">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Collapsible Group Item #1
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- il div sopra è la chiusura della sezione col-12 card -->
                 </div>
             </div>
         </div>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

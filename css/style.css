@@ -107,9 +107,14 @@ li i{
     }
 }
 
+.my_font-size{
+    font-size: 0.8rem;
+    color: white;
+}
+
 @media screen and (min-width:768px){
     .sidebar{
-        width: 120px;
+        width: 160px;
     }
     #block-student{
         display:flex;

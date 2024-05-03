@@ -25,7 +25,7 @@ li i{
     background-image: url('../img/sidebar-bg.png');
 }
 
-ul{
+.navbar > ul{
     list-style: none;
     display: flex;
     align-items: center;
@@ -48,6 +48,11 @@ ul{
     border-radius: 20%;
 }
 
+.my_overflow{
+    height: 100vh;
+    overflow-y:auto;
+}
+
 #height{
     width: 100%;
 }
@@ -60,6 +65,10 @@ ul{
 #block-student{
     background-color:#1b72e8;
     color: white;
+}
+
+.margin_bottom-0{
+    margin-bottom: 0;
 }
 
 .green{

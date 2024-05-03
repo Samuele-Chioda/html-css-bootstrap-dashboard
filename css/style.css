@@ -29,22 +29,14 @@ li > i{
     color: white;
 }
 
-.navbar > ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .my_bg-white{
     background-color: white;
 }
 
 .my_round{
     background-color:#165bba;
-    border-radius: 40%;
-    padding:0.4rem;
-    height: 2rem;
+    border-radius: 25%;
+    padding: 0.2rem;
 }
 
 .my_plus-border{
@@ -111,9 +103,9 @@ li > i{
     }
 }
 
-.my_font-size{
+
+.sec{
     font-size: 0.8rem;
-    color: white;
 }
 
 @media screen and (min-width:768px){
@@ -130,9 +122,22 @@ li > i{
     .img-conteiner{
         width: 8rem;
     }
+    .my_font-size{
+        font-size: 0.8rem;
+        color: white;
+    }
+    li{
+        list-style: none;
+    }
 }
 
 @media (min-width: 576px){
     .container{
     max-width: 100%;}
 }  
+
+@media screen and (max-width:992px){
+    .my_d-none{
+        display:none;
+    }
+}
